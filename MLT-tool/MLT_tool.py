@@ -103,7 +103,7 @@ try:
           os.system('clear')
           print ('Checking for new updates......')
           time.sleep(1)
-          os.system('apt update&&apt upgrade&&cd ..&&rm -r MLT-tool && git clone https://www.github.com/Mahmoud7Osman/MLT-tool&&cd MLT-tool&&python3 MLT_tool.py')
+          os.system('apt update&&apt upgrade&&cd ..&&cd ..&&rm -r MLT && git clone https://www.github.com/Mahmoud7Osman/MLT&&cd MLT/MLT-tool&&python3 MLT_tool.py)
        elif uinput=='12':
           while 1:
             for x in range (0,10101119281121):
