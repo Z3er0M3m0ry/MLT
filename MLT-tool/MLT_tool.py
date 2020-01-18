@@ -102,7 +102,7 @@ try:
        elif uinput=='11':
           os.system('clear')
           print ('Checking for new updates......')
-          time.sleep(1)
+          sleep(1)
           os.system('apt update&&apt upgrade&&cd ..&&cd ..&&rm -r MLT && git clone https://www.github.com/Mahmoud7Osman/MLT&&cd MLT/MLT-tool&&python3 MLT_tool.py')
        elif uinput=='12':
           while 1:
